@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Resistance Exercise Bands",
+    "inStock": false,
+    "price": 1000.0
+  },
+  {
+    "id": 2,
+    "name": "Selfie Ring Light",
+    "inStock": false,
+    "price": 86.0
+  },
+  {
+    "id": 3,
+    "name": "Insulated Travel Mug",
+    "inStock": false,
+    "price": 119.0
+  },
+  {
+    "id": 4,
+    "name": "Graphic Gaming Mousepad",
+    "inStock": true,
+    "price": 45.0
+  },
+  {
+    "id": 5,
+    "name": "Smartphone Camera Lens Kit",
+    "inStock": true,
+    "price": 4.0
+  },
+  {
+    "id": 6,
+    "name": "Stainless Steel Lunch Box",
+    "inStock": false,
+    "price": 85.0
+  },
+  {
+    "id": 7,
+    "name": "Cordless Electric Screwdriver",
+    "inStock": true,
+    "price": 207.0
+  },
+  {
+    "id": 8,
+    "name": "Handheld Milk Frother",
+    "inStock": true,
+    "price": 84.0
+  },
+  {
+    "id": 9,
+    "name": "Portable Power Bank",
+    "inStock": false,
+    "price": 71.0
+  },
+  {
+    "id": 10,
+    "name": "Handheld Milk Frother",
+    "inStock": false,
+    "price": 21.0
+  },
+  {
+    "id": 11,
+    "name": "Eco-Friendly Laundry Detergent",
+    "inStock": true,
+    "price": 290.0
+  },
+  {
+    "id": 12,
+    "name": "Reusable Shopping Bags",
+    "inStock": true,
+    "price": 163.0
+  },
+  {
+    "id": 13,
+    "name": "Collapsible Silicone Folders",
+    "inStock": true,
+    "price": 12.0
+  },
+  {
+    "id": 14,
+    "name": "Galaxy Projection Night Light",
+    "inStock": false,
+    "price": 726.0
+  },
+  {
+    "id": 15,
+    "name": "Hardcover Notebook Set",
+    "inStock": false,
+    "price": 88.0
+  },
+  {
+    "id": 16,
+    "name": "Digital Kitchen Scale",
+    "inStock": false,
+    "price": 204.0
+  },
+  {
+    "id": 17,
+    "name": "Electric Kettle Glass",
+    "inStock": false,
+    "price": 155.0
+  },
+  {
+    "id": 18,
+    "name": "Aromatherapy Shower Steamers",
+    "inStock": false,
+    "price": 64.0
+  },
+  {
+    "id": 19,
+    "name": "Copper Coffee Mug",
+    "inStock": true,
+    "price": 289.0
+  },
+  {
+    "id": 20,
+    "name": "4K Action Camera",
+    "inStock": false,
+    "price": 40.0
+  },
+  {
+    "id": 21,
+    "name": "Smart LED Light Strip",
+    "inStock": true,
+    "price": 52.0
+  },
+  {
+    "id": 22,
+    "name": "Magnetic Phone Car Mount",
+    "inStock": true,
+    "price": 120.0
+  },
+  {
+    "id": 23,
+    "name": "Smart Fitness Watch",
+    "inStock": true,
+    "price": 94.0
+  },
+  {
+    "id": 24,
+    "name": "UV Phone Sanitizer",
+    "inStock": true,
+    "price": 19.0
+  },
+  {
+    "id": 25,
+    "name": "Mini Projector Portable",
+    "inStock": true,
+    "price": 460.0
+  },
+  {
+    "id": 26,
+    "name": "Essential Oil Diffuser",
+    "inStock": false,
+    "price": 173.0
+  },
+  {
+    "id": 27,
+    "name": "LED Desk Lamp",
+    "inStock": true,
+    "price": 111.0
+  },
+  {
+    "id": 28,
+    "name": "Wireless Charging Pad",
+    "inStock": false,
+    "price": 122.0
+  },
+  {
+    "id": 29,
+    "name": "Ergonomic Office Chair",
+    "inStock": true,
+    "price": 64.0
+  },
+  {
+    "id": 30,
+    "name": "Classic Leather Wallet",
+    "inStock": false,
+    "price": 143.0
+  },
+  {
+    "id": 31,
+    "name": "Reusable Makeup Remover Pads",
+    "inStock": false,
+    "price": 55.0
+  },
+  {
+    "id": 32,
+    "name": "Stainless Steel Lunch Box",
+    "inStock": true,
+    "price": 39.0
+  },
+  {
+    "id": 33,
+    "name": "Noise Cancelling Headphones",
+    "inStock": false,
+    "price": 29.0
+  },
+  {
+    "id": 34,
+    "name": "Digital Kitchen Scale",
+    "inStock": true,
+    "price": 44.0
+  },
+  {
+    "id": 35,
+    "name": "Galaxy Projection Night Light",
+    "inStock": true,
+    "price": 105.0
+  },
+  {
+    "id": 36,
+    "name": "Collapsible Silicone Folders",
+    "inStock": false,
+    "price": 65.0
+  },
+  {
+    "id": 37,
+    "name": "Graphic Gaming Mousepad",
+    "inStock": false,
+    "price": 98.0
+  },
+  {
+    "id": 38,
+    "name": "Luxury Silk Sleep Mask",
+    "inStock": false,
+    "price": 573.0
+  },
+  {
+    "id": 39,
+    "name": "Reusable Makeup Remover Pads",
+    "inStock": false,
+    "price": 125.0
+  },
+  {
+    "id": 40,
+    "name": "LED Desk Lamp",
+    "inStock": false,
+    "price": 315.0
+  },
+  {
+    "id": 41,
+    "name": "4K Action Camera",
+    "inStock": false,
+    "price": 148.0
+  },
+  {
+    "id": 42,
+    "name": "Bluetooth Portable Speaker",
+    "inStock": true,
+    "price": 253.0
+  },
+  {
+    "id": 43,
+    "name": "Cordless Electric Screwdriver",
+    "inStock": true,
+    "price": 767.0
+  },
+  {
+    "id": 44,
+    "name": "Reusable Shopping Bags",
+    "inStock": false,
+    "price": 700.0
+  },
+  {
+    "id": 45,
+    "name": "Desktop Cable Organizer",
+    "inStock": false,
+    "price": 258.0
+  },
+  {
+    "id": 46,
+    "name": "Desktop Cable Organizer",
+    "inStock": true,
+    "price": 171.0
+  },
+  {
+    "id": 47,
+    "name": "Digital Kitchen Scale",
+    "inStock": true,
+    "price": 159.0
+  },
+  {
+    "id": 48,
+    "name": "Reusable Shopping Bags",
+    "inStock": false,
+    "price": 27.0
+  },
+  {
+    "id": 49,
+    "name": "Natural Bamboo Cutting Board",
+    "inStock": true,
+    "price": 134.0
+  },
+  {
+    "id": 50,
+    "name": "Portable Power Bank",
+    "inStock": true,
+    "price": 148.0
+  }
+]
