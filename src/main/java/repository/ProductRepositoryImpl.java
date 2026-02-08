@@ -4,8 +4,13 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
+import lombok.Data;
 import lombok.Setter;
 import model.Product;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,12 +20,16 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+@Repository("productRepository")
+@Data
 public class ProductRepositoryImpl implements ProductRepository {
     @Setter
+    @Value("#{'${product.json}'}")
     private String data;
-    @Setter
-    private CurencyFormater cf;
 
+    @Setter
+    @Value("curencyFormater")
+    private CurencyFormater cf;
 
     @Override
     public void deleteProduct(int id) {
@@ -65,14 +74,14 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public Product getProduct(int id) {
-         return getAllProducts().stream().filter(product -> product.getId() == id).findFirst().orElse(null);
+        return getAllProducts().stream().filter(product -> product.getId() == id).findFirst().orElse(null);
 
     }
 
 
     @Override
     public List<Product> findByCategory() {
-       boolean category = true;
+        boolean category = true;
         List<Product> prod = getAllProducts().stream()
                 .filter(product -> category == product.isInStock()).collect(Collectors.toList());
         return prod;
@@ -103,6 +112,7 @@ public class ProductRepositoryImpl implements ProductRepository {
         mapper.registerModule(new JSR310Module());
         return mapper;
     }
+
     private static List<Product> initRepository() {
         List<Product> products = TestDataGenerator.generateRandomBooks(50);
         List<Product> localLibrary = new ArrayList<>();

@@ -1,15 +1,21 @@
 package controller;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
-
+@Component
 public class MainController {
+
 
     final ProductController productController;
 
+    @Autowired
     public MainController(ProductController productController) {
         this.productController = productController;
 
@@ -25,7 +31,7 @@ public class MainController {
             String trim = scanner.nextLine().trim();
 
             switch (trim) {
-                case "p", "product" ->  productController.start();
+                case "p", "product" -> productController.start();
                 case "0", "exit" -> running = false;
             }
 

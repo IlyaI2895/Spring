@@ -1,14 +1,15 @@
+import config.MySpringConfig;
 import controller.MainController;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("application.xml");
-        MainController controller =  context.getBean(MainController.class);
-        controller.start();
-
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+        context.register(MySpringConfig.class);
+        context.refresh();
+        MainController mainController = context.getBean(MainController.class);
+        mainController.start();
 
 
     }

@@ -1,10 +1,11 @@
 package service;
 
 import model.Product;
+import org.springframework.stereotype.Service;
 import repository.ProductRepository;
 
 import java.util.List;
-
+@Service("productService")
 public class ProductServiceImpl implements ProductServise {
     private final ProductRepository productRepository;
 
