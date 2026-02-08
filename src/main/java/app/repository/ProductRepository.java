@@ -1,10 +1,10 @@
-package service;
+package app.repository;
 
-import model.Product;
+import app.model.Product;
 
 import java.util.List;
 
-public interface ProductServise {
+public interface ProductRepository {
     List<Product> getAllProducts();
 
     void addProduct(Product product);
@@ -16,4 +16,6 @@ public interface ProductServise {
     List<Product> findCheapProducts(double maxPrice);
 
     void deleteProduct(int id);
+
+
 }
