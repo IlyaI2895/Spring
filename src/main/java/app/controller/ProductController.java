@@ -1,12 +1,16 @@
-package controller;
+package app.controller;
 
-import model.Product;
-import service.ProductServise;
+import app.model.Product;
+import org.springframework.stereotype.Component;
+import app.service.ProductServise;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
+@Component
 public class ProductController {
     private final ProductServise productServise;
     private Scanner scanner;
@@ -15,11 +19,13 @@ public class ProductController {
         this.productServise = productServise;
     }
 
+    @PostConstruct
     public void init() {
         this.scanner = new Scanner(System.in);
 
     }
 
+    @PreDestroy
     public void destroy() {
         this.scanner.close();
     }
