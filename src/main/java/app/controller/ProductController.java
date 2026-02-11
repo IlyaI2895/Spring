@@ -1,8 +1,11 @@
 package app.controller;
 
 import app.model.Product;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import app.service.ProductServise;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -172,6 +175,6 @@ public class ProductController {
             }
         }
     }
-
-
 }
+
+
