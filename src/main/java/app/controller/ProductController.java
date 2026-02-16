@@ -1,14 +1,7 @@
 package app.controller;
-
 import app.model.Product;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import app.service.ProductServise;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.IntStream;
@@ -22,13 +15,10 @@ public class ProductController {
         this.productServise = productServise;
     }
 
-    @PostConstruct
     public void init() {
         this.scanner = new Scanner(System.in);
 
     }
-
-    @PreDestroy
     public void destroy() {
         this.scanner.close();
     }

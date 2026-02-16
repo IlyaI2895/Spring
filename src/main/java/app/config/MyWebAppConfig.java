@@ -19,33 +19,10 @@ import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import java.util.List;
 
 @Configuration
-@EnableWebMvc
-@ComponentScan("app")
-@PropertySource("classpath:application.properties")
 public class MyWebAppConfig implements WebMvcConfigurer {
-
-    @Override
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        converters.add(new MappingJackson2HttpMessageConverter());
-    }
-
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
-        return new PropertySourcesPlaceholderConfigurer();
-    }
-
-
-    private final ApplicationContext applicationContext;
-
-    @Autowired
-    public MyWebAppConfig(ApplicationContext applicationContext) {
-        this.applicationContext = applicationContext;
-    }
-
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
-        resolver.setApplicationContext(applicationContext);
         resolver.setPrefix("/WEB-INF/views/");
         resolver.setSuffix(".html");
         resolver.setTemplateMode("HTML");
@@ -54,21 +31,5 @@ public class MyWebAppConfig implements WebMvcConfigurer {
         return resolver;
     }
 
-    @Bean
-    public SpringTemplateEngine templateEngine() {
-        SpringTemplateEngine engine = new SpringTemplateEngine();
-        engine.setTemplateResolver(templateResolver());
-        engine.setEnableSpringELCompiler(true);
-        return engine;
-    }
-
-    @Override
-    public void configureViewResolvers(ViewResolverRegistry registry) {
-        ThymeleafViewResolver resolver = new ThymeleafViewResolver();
-        resolver.setTemplateEngine(templateEngine());
-        resolver.setCharacterEncoding("UTF-8");
-        resolver.setOrder(1);
-        registry.viewResolver(resolver);
-    }
-
 }
+
